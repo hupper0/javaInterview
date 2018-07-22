@@ -2,135 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18cbf24c-00d1-4b42-b263-6e7dd1080de8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_1_40.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_1_5_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_1_5_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_5_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/actual/ThreadCommunication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/basic/HashMapTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/concurrent/ThreadState.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/concurrent/VolatileInc.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/spring/LifeCycleConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/spring/SpringLifeCycle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/spring/annotation/AnnotationBean.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/spring/aware/SpringLifeCycleAware.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/spring/processor/SpringLifeCycleProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/spring/service/SpringLifeCycleService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/crossoverjie/actual/LRULinkedMapTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/crossoverjie/actual/LRUMapTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/crossoverjie/algorithm/ReverseNodeTest.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/Application.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/actual/LRUAbstractMap.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/actual/LRUAbstractMap.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/actual/LRULinkedMap.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/actual/LRULinkedMap.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/actual/LRUMap.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/actual/LRUMap.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/actual/ReadFile.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/actual/ReadFile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/actual/TwoThread.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/actual/TwoThread.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/actual/TwoThreadWaitNotify.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/actual/TwoThreadWaitNotify.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/ArrayKShift.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/ArrayKShift.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/BinaryNode.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/BinaryNode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/HappyNum.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/HappyNum.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/LinkLoop.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/LinkLoop.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/LinkNode.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/LinkNode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/LinkedListMergeSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/LinkedListMergeSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/MergeTwoSortedLists.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/MergeTwoSortedLists.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/ReverseNode.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/ReverseNode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/TestJZ.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/TestJZ.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/TestSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/TestSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/TestTree.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/TestTree.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/TwoArray.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/TwoArray.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/TwoStackQueue.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/TwoStackQueue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/TwoSum.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/TwoSum.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/util/AssertUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/util/AssertUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/util/CommonUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/util/CommonUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/util/ObjectUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/util/ObjectUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/util/SerializeUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/util/SerializeUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/algorithm/util/TimeUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/algorithm/util/TimeUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/basic/StringTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/basic/StringTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/classloader/ChildClass.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/classloader/ChildClass.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/classloader/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/classloader/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/classloader/SuperClass.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/classloader/SuperClass.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/concurrent/Singleton.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/concurrent/Singleton.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/concurrent/StopThread.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/concurrent/StopThread.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/concurrent/Volatile.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/concurrent/Volatile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/design/pattern/factorymethod/Animal.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/design/pattern/factorymethod/Animal.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/design/pattern/factorymethod/AnimalFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/design/pattern/factorymethod/AnimalFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/design/pattern/factorymethod/Cat.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/design/pattern/factorymethod/Cat.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/design/pattern/factorymethod/CatFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/design/pattern/factorymethod/CatFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/design/pattern/factorymethod/Fish.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/design/pattern/factorymethod/Fish.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/design/pattern/factorymethod/FishFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/design/pattern/factorymethod/FishFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/design/pattern/factorymethod/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/design/pattern/factorymethod/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/gc/MinorGC.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/gc/MinorGC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/guava/CacheLoaderTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/guava/CacheLoaderTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/guava/callback/CallBackListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/guava/callback/CallBackListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/guava/callback/Caller.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/guava/callback/Caller.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/guava/callback/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/guava/callback/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/guava/callback/Notifier.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/guava/callback/Notifier.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/oom/heap/HeapOOM.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/oom/heap/HeapOOM.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/oom/heap/MetaSpaceOOM.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/oom/heap/MetaSpaceOOM.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/proxy/cglib/RealSubject.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/proxy/cglib/RealSubject.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/proxy/cglib/RealSubjectIntercept.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/proxy/cglib/RealSubjectIntercept.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/proxy/jdk/CustomizeHandle.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/proxy/jdk/CustomizeHandle.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/proxy/jdk/ISubject.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/proxy/jdk/ISubject.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/proxy/jdk/impl/ISubjectImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/proxy/jdk/impl/ISubjectImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/red/RedPacket.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/red/RedPacket.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/crossoverjie/synchronize/Synchronize.java" afterPath="$PROJECT_DIR$/src/main/java/com/hupper/synchronize/Synchronize.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/crossoverjie/actual/AbstractMapTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/hupper/actual/AbstractMapTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/crossoverjie/algorithm/BinaryNodeTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/hupper/algorithm/BinaryNodeTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/crossoverjie/algorithm/HappyNumTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/hupper/algorithm/HappyNumTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/crossoverjie/algorithm/LinkLoopTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/hupper/algorithm/LinkLoopTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/crossoverjie/algorithm/MergeTwoSortedListsTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/hupper/algorithm/MergeTwoSortedListsTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/crossoverjie/algorithm/TwoStackQueueTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/hupper/algorithm/TwoStackQueueTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/crossoverjie/algorithm/TwoSumTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/hupper/algorithm/TwoSumTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/crossoverjie/proxy/JDKProxyTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/hupper/proxy/JDKProxyTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markdown/OOM-analysis.md" afterPath="$PROJECT_DIR$/markdown/OOM-analysis.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markdown/SpringAOP.md" afterPath="$PROJECT_DIR$/markdown/SpringAOP.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markdown/Synchronize.md" afterPath="$PROJECT_DIR$/markdown/Synchronize.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markdown/spring/spring-bean-lifecycle.md" afterPath="$PROJECT_DIR$/markdown/spring/spring-bean-lifecycle.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -149,7 +23,46 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-220">
+                <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logback.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>crossoverJie</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -162,6 +75,14 @@
     </option>
     <option name="externalProjectsViewState">
       <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -181,7 +102,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="709" />
+    <option name="height" value="707" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -239,6 +160,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -939,48 +864,80 @@
       <option name="presentableId" value="Default" />
       <updated>1532273391828</updated>
       <workItem from="1532273393720" duration="20000" />
-      <workItem from="1532273484510" duration="61000" />
+      <workItem from="1532273484510" duration="631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81000" />
+    <option name="totallyTimeSpent" value="651000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="707" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2540453" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2540453" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2540453" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -997,6 +954,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-220">
+            <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
