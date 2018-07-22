@@ -89,7 +89,7 @@ public class SpringLifeCycle{
 以上是在 SpringBoot 中可以这样配置，如果是原始的基于 XML 也是可以使用:
 
 ```xml
-<bean class="com.crossoverjie.spring.SpringLifeCycle" init-method="start" destroy-method="destroy">
+<bean class="com.hupper.spring.SpringLifeCycle" init-method="start" destroy-method="destroy">
 </bean>
 ```
 
@@ -168,8 +168,8 @@ public class SpringLifeCycleProcessor implements BeanPostProcessor {
 2018-03-21 00:40:24.887 [restartedMain] INFO  c.c.spring.SpringLifeCycle - SpringLifeCycle start
 2018-03-21 00:40:25.062 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
 2018-03-21 00:40:25.122 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-2018-03-21 00:40:25.140 [restartedMain] INFO  com.crossoverjie.Application - Started Application in 2.309 seconds (JVM running for 3.681)
-2018-03-21 00:40:25.143 [restartedMain] INFO  com.crossoverjie.Application - start ok!
+2018-03-21 00:40:25.140 [restartedMain] INFO  com.hupper.Application - Started Application in 2.309 seconds (JVM running for 3.681)
+2018-03-21 00:40:25.143 [restartedMain] INFO  com.hupper.Application - start ok!
 2018-03-21 00:40:25.153 [Thread-8] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3913adad: startup date [Wed Mar 21 00:40:23 CST 2018]; root of context hierarchy
 2018-03-21 00:40:25.155 [Thread-8] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
 2018-03-21 00:40:25.156 [Thread-8] INFO  c.c.spring.SpringLifeCycle - SpringLifeCycle destroy

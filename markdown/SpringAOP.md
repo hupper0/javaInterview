@@ -140,7 +140,7 @@ public class CustomizeHandle implements InvocationHandler {
 
 反编译后结果如下:
 ```java
-import com.crossoverjie.proxy.jdk.ISubject;
+import com.hupper.proxy.jdk.ISubject;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
@@ -200,7 +200,7 @@ public class $Proxy1 extends Proxy implements ISubject {
         try {
             m1 = Class.forName("java.lang.Object").getMethod("equals", new Class[]{Class.forName("java.lang.Object")});
             m2 = Class.forName("java.lang.Object").getMethod("toString", new Class[0]);
-            m3 = Class.forName("com.crossoverjie.proxy.jdk.ISubject").getMethod("execute", new Class[0]);
+            m3 = Class.forName(hcom.hupper("execute", new Class[0]);
             m0 = Class.forName("java.lang.Object").getMethod("hashCode", new Class[0]);
         } catch (NoSuchMethodException var2) {
             throw new NoSuchMethodError(var2.getMessage());
