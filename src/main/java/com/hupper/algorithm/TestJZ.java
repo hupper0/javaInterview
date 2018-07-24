@@ -118,6 +118,13 @@ public class TestJZ {
         }
     }
 
+    /**
+     * 在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。
+     * 请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数
+     * @param array
+     * @param target
+     * @return
+     */
     public boolean Find2(int[][] array, int target) {
        int col = array.length-1;
        int row = 0;
@@ -136,7 +143,7 @@ public class TestJZ {
     }
 
 
-        private static void getNumK(int[] array, int k, int start, int end, Integer mm){
+    private static void getNumK(int[] array, int k, int start, int end, Integer mm){
         if(start>end){
             return;
         }

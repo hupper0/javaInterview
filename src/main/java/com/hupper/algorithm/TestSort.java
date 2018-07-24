@@ -121,10 +121,13 @@ public class TestSort {
     }
 
 
-
-
-
-
+    /**
+     * 归并排序
+     * @param array
+     * @param copy
+     * @param begin
+     * @param end
+     */
     public static void mergerSort(int[] array, int[] copy, int begin, int end) {
         if(begin>=end){
             return;

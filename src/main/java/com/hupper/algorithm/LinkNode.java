@@ -71,13 +71,14 @@ public class LinkNode {
             return;
         }
         Node t = head;
-        while(true){
+        Node pre = null;
+        while(t!=null){
             if(pos>0){
                 pos --;
+                pre = t;
                 t = t.next;
             }else{
-                t.next.pre = t.pre;
-                t.pre.next = t.next;
+                pre.next = t.next;
                 return;
             }
         }
@@ -120,6 +121,25 @@ public class LinkNode {
            }
             cur = cur.next;
         }
+    }
+
+
+    public void deleteDuplecate3(Node head) {
+        Node cur = head;
+        while (cur!=null){
+            Node point = cur.next;
+            Node pointPre = cur;
+            while (point!=null) {
+                if(cur.data == point.data){
+                    pointPre.next = point.next;
+                }
+                pointPre = point;
+                point = point.next;
+            }
+            cur = cur.next;
+        }
+
+
     }
 
 
@@ -222,12 +242,12 @@ public class LinkNode {
         Node newHead =null;
         while(current!=null){
             next = current.next;
-//            current.next = pre;
-            //业务逻辑
+            current.next = pre;
+//            业务逻辑
 
-//            if(next == null){
-//                newHead = current;
-//            }
+            if(next == null){
+                newHead = current;
+            }
             pre = current;
             current = next;
         }
