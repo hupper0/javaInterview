@@ -26,7 +26,7 @@ Java 知识点，继续完善中。
 - [ConcurrentHashMap 的实现原理](https://github.com/hupper0/Java-Interview/blob/master/markdown/ConcurrentHashMap.md)
 - [线程池原理](https://github.com/hupper0/Java-Interview/blob/master/markdown/ThreadPoolExecutor.md)
 - [深入理解线程通信](https://github.com/hupper0/Java-Interview/blob/master/markdown/concurrent/thread-communication.md)
-- [交替打印奇偶数](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/actual/TwoThread.java)
+- [交替打印奇偶数](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper/actual/TwoThread.java)
 
 ### JVM
 - [Java 运行时内存划分](https://github.com/hupper0/Java-Interview/blob/master/markdown/MemoryAllocation.md)
@@ -63,16 +63,16 @@ Java 知识点，继续完善中。
 - [数据库水平垂直拆分](https://github.com/hupper0/Java-Interview/blob/master/markdown/DB-split.md)
 
 ### 数据结构与算法
-- [红包算法](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/red/RedPacket.java)
-- [二叉树中序遍历](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/algorithm/BinaryNode.java#L76-L101)
-- [是否为快乐数字](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/algorithm/HappyNum.java#L38-L55)
-- [链表是否有环](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/algorithm/LinkLoop.java#L32-L59)
-- [从一个数组中返回两个值相加等于目标值的下标](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/algorithm/TwoSum.java#L38-L59)
+- [红包算法](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper/red/RedPacket.java)
+- [二叉树中序遍历](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper/algorithm/BinaryNode.java#L76-L101)
+- [是否为快乐数字](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper/algorithm/HappyNum.java#L38-L55)
+- [链表是否有环](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper/algorithm/LinkLoop.java#L32-L59)
+- [从一个数组中返回两个值相加等于目标值的下标](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper/algorithm/TwoSum.java#L38-L59)
 - [一致性 Hash 算法](https://github.com/hupper0/Java-Interview/blob/master/markdown/Consistent-Hash.md)
 - [限流算法](https://github.com/hupper0/Java-Interview/blob/master/markdown/Limiting.md)
-- [三种方式反向打印单向链表](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/algorithm/ReverseNode.java)
-- [合并两个排好序的链表](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/algorithm/MergeTwoSortedLists.java)
-- [两个栈实现队列](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/algorithm/TwoStackQueue.java)
+- [三种方式反向打印单向链表](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper/algorithm/ReverseNode.java)
+- [合并两个排好序的链表](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper/algorithm/MergeTwoSortedLists.java)
+- [两个栈实现队列](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper/algorithm/TwoStackQueue.java)
 - [动手实现一个 LRU cache](http://hupper0.top/2018/04/07/algorithm/LRU-cache/)
 - [链表排序](./src/main/java/com/hupper/algorithm/LinkedListMergeSort.java)
 - [数组右移 k 次](./src/main/java/com/hupper/algorithm/ArrayKShift.java)
