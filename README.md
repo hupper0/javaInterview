@@ -1,7 +1,3 @@
-[![Build Status](https://travis-ci.org/hupper0/Java-Interview.svg?branch=master)](https://travis-ci.org/hupper0/Java-Interview)
-
-[qq0groupsvg]: https://img.shields.io/badge/QQ%E7%BE%A4-787381170-yellowgreen.svg
-[qq0group]: https://jq.qq.com/?_wv=1027&k=5HPYvQk
 
 Java 知识点，继续完善中。
 
@@ -51,7 +47,7 @@ Java 知识点，继续完善中。
 
 - [Spring Bean 生命周期](https://github.com/hupper0/Java-Interview/blob/master/markdown/spring/spring-bean-lifecycle.md)
 - [Spring AOP 的实现原理](https://github.com/hupper0/Java-Interview/blob/master/markdown/SpringAOP.md) 
-- [Guava 源码分析（Cache 原理）](https://crossoverjie.top/2018/06/13/guava/guava-cache/)
+- [Guava 源码分析（Cache 原理）]()
 - SpringBoot 启动过程
 - Tomcat 类加载机制
 
@@ -82,13 +78,11 @@ Java 知识点，继续完善中。
 - [数组右移 k 次](./src/main/java/com/hupper/algorithm/ArrayKShift.java)
 
 ### Netty 相关
-- [SpringBoot 整合长连接心跳机制](https://crossoverjie.top/2018/05/24/netty/Netty(1)TCP-Heartbeat/)
-- [从线程模型的角度看 Netty 为什么是高性能的？](https://crossoverjie.top/2018/07/04/netty/Netty(2)Thread-model/)
 
 ### 附加技能
 
 - [TCP/IP 协议](https://github.com/hupper0/Java-Interview/blob/master/markdown/TCP-IP.md)
-- [一个学渣的阿里之路](https://crossoverjie.top/2018/06/21/personal/Interview-experience/)
+- [一个学渣的meitu之路]()
 
 
 ### 联系作者
