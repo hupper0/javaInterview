@@ -142,7 +142,14 @@ public class TestJZ {
         return flag;
     }
 
-
+    /**
+     * 在一个已经排序好的数组，数组里有重复的元素，给定一个已知的数，判断该数在数组里出现的次数
+     * @param array
+     * @param k
+     * @param start
+     * @param end
+     * @return
+     */
     private static void getNumK(int[] array, int k, int start, int end, Integer mm){
         if(start>end){
             return;

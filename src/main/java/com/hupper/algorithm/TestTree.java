@@ -384,7 +384,8 @@ class BiTree{
         this.data = data;
     }
 
-    public String toString(){
-        return data+"";
-    }
+
+//    public String toString(){
+//        return data+"";
+//    }
 }
