@@ -3,7 +3,7 @@
 
 ## 创建对象
 
-当 `JVM` 收到一个 `new` 指令时，会检查指令中的参数在常量池是否有这个符号的引用，还会检查该类是否已经被[加载](https://github.com/crossoverJie/Java-Interview/blob/master/MD/ClassLoad.md)过了，如果没有的话则要进行一次类加载。
+当 `JVM` 收到一个 `new` 指令时，会检查指令中的参数在常量池是否有这个符号的引用，还会检查该类是否已经被[加载](https://github.com/hupper0/Java-Interview/blob/master/MD/ClassLoad.md)过了，如果没有的话则要进行一次类加载。
 
 接着就是分配内存了，通常有两种方式：
 
@@ -26,7 +26,7 @@
 
 可以使用 `-XX:+/-UseTLAB` 参数来设定 `JVM` 是否开启 `TLAB` 。
 
-内存分配之后需要对该对象进行设置，如对象头。对象头的一些应用可以查看 [Synchronize 关键字原理](https://github.com/crossoverJie/Java-Interview/blob/master/MD/Synchronize.md)。
+内存分配之后需要对该对象进行设置，如对象头。对象头的一些应用可以查看 [Synchronize 关键字原理](https://github.com/hupper0/Java-Interview/blob/master/MD/Synchronize.md)。
 
 ### 对象访问
 
@@ -54,7 +54,7 @@
 
 当在 `Eden` 区分配内存不足时，则会发生 `minorGC` ，由于 `Java` 对象多数是**朝生夕灭**的特性，所以 `minorGC` 通常会比较频繁，效率也比较高。
 
-当发生 `minorGC` 时，JVM 会根据[复制算法](https://github.com/crossoverJie/Java-Interview/blob/master/MD/GarbageCollection.md#%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95)将存活的对象拷贝到另一个未使用的 `Survivor` 区，如果 `Survivor` 区内存不足时，则会使用分配担保策略将对象移动到老年代中。
+当发生 `minorGC` 时，JVM 会根据[复制算法](https://github.com/hupper0/Java-Interview/blob/master/MD/GarbageCollection.md#%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95)将存活的对象拷贝到另一个未使用的 `Survivor` 区，如果 `Survivor` 区内存不足时，则会使用分配担保策略将对象移动到老年代中。
 
 谈到 `minorGC` 时，就不得不提到 `fullGC(majorGC)` ，这是指发生在老年代的 `GC` ，不论是效率还是速度都比 `minorGC` 慢的多，回收时还会发生 `stop the world` 使程序发生停顿，所以应当尽量避免发生 `fullGC` 。
 

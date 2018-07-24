@@ -281,7 +281,7 @@ thread A执行完毕
 
 这里的 flag 存放于主内存中，所以主线程和线程 A 都可以看到。
 
-flag 采用 volatile 修饰主要是为了内存可见性，更多内容可以查看[这里](http://crossoverjie.top/2018/03/09/volatile/)。
+flag 采用 volatile 修饰主要是为了内存可见性，更多内容可以查看[这里](http://hupper0.top/2018/03/09/volatile/)。
 
 
 ## CountDownLatch 并发工具
@@ -328,7 +328,7 @@ CountDownLatch 可以实现 join 相同的功能，但是更加的灵活。
 2018-03-16 20:19:46.136 [main] INFO  c.c.actual.ThreadCommunication - main over total time=2012
 ```
 
-CountDownLatch 也是基于 AQS(AbstractQueuedSynchronizer) 实现的，更多实现参考 [ReentrantLock 实现原理](http://crossoverjie.top/2018/01/25/ReentrantLock/)
+CountDownLatch 也是基于 AQS(AbstractQueuedSynchronizer) 实现的，更多实现参考 [ReentrantLock 实现原理](http://hupper0.top/2018/01/25/ReentrantLock/)
 
 - 初始化一个 CountDownLatch 时告诉并发的线程，然后在每个线程处理完毕之后调用 countDown() 方法。
 - 该方法会将 AQS 内置的一个 state 状态 -1 。

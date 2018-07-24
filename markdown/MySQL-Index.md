@@ -23,4 +23,4 @@
 
 磁盘块越大，数据项越小那么数的高度就越低。这也就是为什么索引字段要尽可能小的原因。
 
-> 索引使用的一些[原则](https://github.com/crossoverJie/Java-Interview/blob/master/MD/SQL-optimization.md)。
+> 索引使用的一些[原则](https://github.com/hupper0/Java-Interview/blob/master/MD/SQL-optimization.md)。

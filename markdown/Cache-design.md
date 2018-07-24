@@ -14,7 +14,7 @@
 
 可以有以下解决方案:
 - 可以将多个 Tomcat 中的数据写入到 MQ 队列中，由消费者进行单线程更新缓存。
-- 利用[分布式锁](https://github.com/crossoverJie/Java-Interview/blob/master/MD/Java-lock.md#%E5%9F%BA%E4%BA%8E%E6%95%B0%E6%8D%AE%E5%BA%93)，只有获取到锁进程才能写数据。
+- 利用[分布式锁](https://github.com/hupper0/Java-Interview/blob/master/MD/Java-lock.md#%E5%9F%BA%E4%BA%8E%E6%95%B0%E6%8D%AE%E5%BA%93)，只有获取到锁进程才能写数据。
 
 ## 如何写缓存
 

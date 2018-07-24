@@ -54,5 +54,5 @@
 ```
 
 
-1. [单 JVM 限流](http://crossoverjie.top/2017/08/11/sbc4/)
-2. [分布式限流](http://crossoverjie.top/2018/04/28/sbc/sbc7-Distributed-Limit/)
+1. [单 JVM 限流](http://hupper0.top/2017/08/11/sbc4/)
+2. [分布式限流](http://hupper0.top/2018/04/28/sbc/sbc7-Distributed-Limit/)

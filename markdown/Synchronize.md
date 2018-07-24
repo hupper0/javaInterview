@@ -43,7 +43,7 @@ public class com.hupper.synchronize.Synchronize {
 
   public static void main(java.lang.String[]);
     Code:
-       0: ldc           #2                  // class com/crossoverjie/synchronize/Synchronize
+       0: ldc           #2                  // class com/hupper0/synchronize/Synchronize
        2: dup
        3: astore_1
        **4: monitorenter**

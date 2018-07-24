@@ -72,4 +72,4 @@ map.forEach((key,value)->{
 
 大大提高了查询效率。
 
-多线程场景下推荐使用 [ConcurrentHashMap](https://github.com/crossoverJie/Java-Interview/blob/master/MD/ConcurrentHashMap.md)。
+多线程场景下推荐使用 [ConcurrentHashMap](https://github.com/hupper0/Java-Interview/blob/master/MD/ConcurrentHashMap.md)。

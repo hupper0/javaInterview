@@ -26,7 +26,7 @@ Java 知识点，继续完善中。
 - [ConcurrentHashMap 的实现原理](https://github.com/hupper0/Java-Interview/blob/master/markdown/ConcurrentHashMap.md)
 - [线程池原理](https://github.com/hupper0/Java-Interview/blob/master/markdown/ThreadPoolExecutor.md)
 - [深入理解线程通信](https://github.com/hupper0/Java-Interview/blob/master/markdown/concurrent/thread-communication.md)
-- [交替打印奇偶数](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/crossoverjie/actual/TwoThread.java)
+- [交替打印奇偶数](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/actual/TwoThread.java)
 
 ### JVM
 - [Java 运行时内存划分](https://github.com/hupper0/Java-Interview/blob/master/markdown/MemoryAllocation.md)
@@ -38,8 +38,8 @@ Java 知识点，继续完善中。
 
 ### 分布式相关
 
-- [分布式限流](http://crossoverjie.top/2018/04/28/sbc/sbc7-Distributed-Limit/)
-- [基于 Redis 的分布式锁](http://crossoverjie.top/2018/03/29/distributed-lock/distributed-lock-redis/)
+- [分布式限流](http://hupper0.top/2018/04/28/sbc/sbc7-Distributed-Limit/)
+- [基于 Redis 的分布式锁](http://hupper0.top/2018/03/29/distributed-lock/distributed-lock-redis/)
 - [分布式缓存设计](https://github.com/hupper0/Java-Interview/blob/master/markdown/Cache-design.md)
 - [分布式 ID 生成器](https://github.com/hupper0/Java-Interview/blob/master/markdown/ID-generator.md)
 
@@ -54,7 +54,7 @@ Java 知识点，继续完善中。
 
 ### 架构设计
 - [秒杀系统设计](https://github.com/hupper0/Java-Interview/blob/master/markdown/Spike.md)
-- [秒杀架构实践](http://crossoverjie.top/2018/05/07/ssm/SSM18-seconds-kill/)
+- [秒杀架构实践](http://hupper0.top/2018/05/07/ssm/SSM18-seconds-kill/)
 
 ### DB 相关
 
@@ -63,17 +63,17 @@ Java 知识点，继续完善中。
 - [数据库水平垂直拆分](https://github.com/hupper0/Java-Interview/blob/master/markdown/DB-split.md)
 
 ### 数据结构与算法
-- [红包算法](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/crossoverjie/red/RedPacket.java)
-- [二叉树中序遍历](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/crossoverjie/algorithm/BinaryNode.java#L76-L101)
-- [是否为快乐数字](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/crossoverjie/algorithm/HappyNum.java#L38-L55)
-- [链表是否有环](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/crossoverjie/algorithm/LinkLoop.java#L32-L59)
-- [从一个数组中返回两个值相加等于目标值的下标](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/crossoverjie/algorithm/TwoSum.java#L38-L59)
+- [红包算法](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/red/RedPacket.java)
+- [二叉树中序遍历](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/algorithm/BinaryNode.java#L76-L101)
+- [是否为快乐数字](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/algorithm/HappyNum.java#L38-L55)
+- [链表是否有环](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/algorithm/LinkLoop.java#L32-L59)
+- [从一个数组中返回两个值相加等于目标值的下标](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/algorithm/TwoSum.java#L38-L59)
 - [一致性 Hash 算法](https://github.com/hupper0/Java-Interview/blob/master/markdown/Consistent-Hash.md)
 - [限流算法](https://github.com/hupper0/Java-Interview/blob/master/markdown/Limiting.md)
-- [三种方式反向打印单向链表](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/crossoverjie/algorithm/ReverseNode.java)
-- [合并两个排好序的链表](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/crossoverjie/algorithm/MergeTwoSortedLists.java)
-- [两个栈实现队列](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/crossoverjie/algorithm/TwoStackQueue.java)
-- [动手实现一个 LRU cache](http://crossoverjie.top/2018/04/07/algorithm/LRU-cache/)
+- [三种方式反向打印单向链表](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/algorithm/ReverseNode.java)
+- [合并两个排好序的链表](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/algorithm/MergeTwoSortedLists.java)
+- [两个栈实现队列](https://github.com/hupper0/Java-Interview/blob/master/src/main/java/com/hupper0/algorithm/TwoStackQueue.java)
+- [动手实现一个 LRU cache](http://hupper0.top/2018/04/07/algorithm/LRU-cache/)
 - [链表排序](./src/main/java/com/hupper/algorithm/LinkedListMergeSort.java)
 - [数组右移 k 次](./src/main/java/com/hupper/algorithm/ArrayKShift.java)
 
