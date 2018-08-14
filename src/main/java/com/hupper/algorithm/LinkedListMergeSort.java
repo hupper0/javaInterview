@@ -6,7 +6,7 @@ package com.hupper.algorithm;
  *     e.g: 1->5->4->3->2
  *     排序后结果 5->4->3->2->1
  *
- * @author 6563699600@qq.com
+ * @author lhp
  * @date 6/7/2018 11:42 PM
  * @since 1.0
  */
