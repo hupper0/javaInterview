@@ -1,6 +1,12 @@
-# Created by .ignore support plugin (hsz.mobi)
-.gitignore
+# Ignore everything in this directory
+*~
+#.gitignore
 
 interview.iml
 .idea/workspace.xml
 .idea
+.idea/*
+.idea/libraries/*.xml
+
+target/*
+target
