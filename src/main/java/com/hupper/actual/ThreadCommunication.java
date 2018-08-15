@@ -12,7 +12,7 @@ import java.util.concurrent.*;
  * Function:三种方式线程通信
  *
  * @author lhp
- *         Date: 04/01/2018 22:57
+ * Date: 04/01/2018 22:57
  * @since JDK 1.8
  */
 public class ThreadCommunication {
@@ -32,14 +32,14 @@ public class ThreadCommunication {
      * @throws Exception
      */
     private static void cyclicBarrier() throws Exception {
-        CyclicBarrier cyclicBarrier = new CyclicBarrier(3) ;
+        CyclicBarrier cyclicBarrier = new CyclicBarrier(3);
 
         new Thread(new Runnable() {
             @Override
             public void run() {
                 LOGGER.info("thread run");
                 try {
-                    cyclicBarrier.await() ;
+                    cyclicBarrier.await();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -53,7 +53,7 @@ public class ThreadCommunication {
             public void run() {
                 LOGGER.info("thread run");
                 try {
-                    cyclicBarrier.await() ;
+                    cyclicBarrier.await();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -68,7 +68,7 @@ public class ThreadCommunication {
                 LOGGER.info("thread run");
                 try {
                     Thread.sleep(5000);
-                    cyclicBarrier.await() ;
+                    cyclicBarrier.await();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -202,7 +202,7 @@ public class ThreadCommunication {
                 try {
                     for (int i = 0; i < 10; i++) {
 
-                        writer.write(i+"");
+                        writer.write(i + "");
                         Thread.sleep(10);
                     }
                 } catch (Exception e) {

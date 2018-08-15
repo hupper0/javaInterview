@@ -4,12 +4,12 @@ package com.hupper.design.pattern.factorymethod;
  * Function:
  *
  * @author lhp
- *         Date: 19/03/2018 14:29
+ * Date: 19/03/2018 14:29
  * @since JDK 1.8
  */
 public abstract class Animal {
 
-    private String name ;
+    private String name;
 
     public String getName() {
         return name;
@@ -22,5 +22,5 @@ public abstract class Animal {
     /**
      * 描述抽象方法
      */
-    protected abstract void desc() ;
+    protected abstract void desc();
 }

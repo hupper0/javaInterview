@@ -7,23 +7,23 @@ import org.slf4j.LoggerFactory;
  * Function:
  *
  * @author lhp
- *         Date: 2018/7/15 13:52
+ * Date: 2018/7/15 13:52
  * @since JDK 1.8
  */
 public class Caller {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(Caller.class);
 
-    private CallBackListener callBackListener ;
+    private CallBackListener callBackListener;
 
-    private Notifier notifier ;
+    private Notifier notifier;
 
-    private String question ;
+    private String question;
 
     /**
      * 使用
      */
-    public void call(){
+    public void call() {
 
         LOGGER.info("开始提问");
 
@@ -32,7 +32,7 @@ public class Caller {
             @Override
             public void run() {
                 try {
-                    notifier.execute(Caller.this,question);
+                    notifier.execute(Caller.this, question);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

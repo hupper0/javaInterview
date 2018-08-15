@@ -5,11 +5,11 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Function: 两个线程交替执行打印 1~100
- *
+ * <p>
  * lock 版
  *
  * @author lhp
- *         Date: 11/02/2018 10:04
+ * Date: 11/02/2018 10:04
  * @since JDK 1.8
  */
 public class TwoThread {

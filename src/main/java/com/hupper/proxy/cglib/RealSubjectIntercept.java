@@ -11,14 +11,12 @@ import java.lang.reflect.Method;
  * Function:
  *
  * @author lhp
- *         Date: 24/12/2017 19:02
+ * Date: 24/12/2017 19:02
  * @since JDK 1.8
  */
-public class RealSubjectIntercept implements MethodInterceptor{
+public class RealSubjectIntercept implements MethodInterceptor {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(RealSubjectIntercept.class);
-
-
 
 
     @Override

@@ -1,7 +1,8 @@
 1.1 背景
 ![avatar](netty.png)
 　　最近一直在看Netty相关的知识，在想RPC的底层Netty如何来保证的。
-　　推荐一本书《Netty权威指南》以及https://dirtysalt.github.io/netty.html
+　　推荐一本书《Netty权威指南》以及
+        https://dirtysalt.github.io/netty.html
 
        https://www.gitbook.com/book/waylau/essential-netty-in-action/details
 

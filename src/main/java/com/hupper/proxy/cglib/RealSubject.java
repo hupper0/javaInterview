@@ -7,13 +7,13 @@ import org.slf4j.LoggerFactory;
  * Function:
  *
  * @author lhp
- *         Date: 24/12/2017 19:01
+ * Date: 24/12/2017 19:01
  * @since JDK 1.8
  */
 public class RealSubject {
     private final static Logger LOGGER = LoggerFactory.getLogger(RealSubject.class);
 
-    public void exec(){
+    public void exec() {
         LOGGER.info("real exec");
     }
 }

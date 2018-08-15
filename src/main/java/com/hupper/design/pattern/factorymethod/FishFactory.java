@@ -4,12 +4,12 @@ package com.hupper.design.pattern.factorymethod;
  * Function:
  *
  * @author lhp
- *         Date: 19/03/2018 15:21
+ * Date: 19/03/2018 15:21
  * @since JDK 1.8
  */
 public class FishFactory implements AnimalFactory {
     @Override
     public Animal createAnimal() {
-        return new Fish() ;
+        return new Fish();
     }
 }

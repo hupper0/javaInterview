@@ -118,7 +118,6 @@ public abstract class CommonUtils implements Serializable {
     }
 
 
-
     public static Long toLong(Object val, Long defVal) {
         if (isEmpty(val)) {
             return defVal;
@@ -316,8 +315,6 @@ public abstract class CommonUtils implements Serializable {
         }
         return null;
     }
-
-
 
 
     public static String uuid() {

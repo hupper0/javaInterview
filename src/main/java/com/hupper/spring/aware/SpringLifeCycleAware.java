@@ -11,18 +11,18 @@ import org.springframework.stereotype.Component;
  * Function:
  *
  * @author lhp
- *         Date: 20/03/2018 21:54
+ * Date: 20/03/2018 21:54
  * @since JDK 1.8
  */
 @Component
 public class SpringLifeCycleAware implements ApplicationContextAware {
     private final static Logger LOGGER = LoggerFactory.getLogger(SpringLifeCycleAware.class);
 
-    private ApplicationContext applicationContext ;
+    private ApplicationContext applicationContext;
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        this.applicationContext = applicationContext ;
+        this.applicationContext = applicationContext;
         LOGGER.info("SpringLifeCycleAware start");
     }
 }

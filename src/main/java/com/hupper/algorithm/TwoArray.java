@@ -7,14 +7,12 @@ import org.slf4j.LoggerFactory;
  * Function: 在二维数组中判断是否存在查找的数字
  *
  * @author lhp
- *         Date: 09/02/2018 22:19
+ * Date: 09/02/2018 22:19
  * @since JDK 1.8
  */
 public class TwoArray {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(TwoArray.class);
-
-
 
 
     public static void main(String[] args) {
@@ -35,7 +33,6 @@ public class TwoArray {
         LOGGER.info(String.valueOf(cols));
 
     }
-
 
 
 }

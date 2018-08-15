@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
  * Function:
  *
  * @author lhp
- *         Date: 2018/7/15 13:59
+ * Date: 2018/7/15 13:59
  * @since JDK 1.8
  */
 public class Notifier {

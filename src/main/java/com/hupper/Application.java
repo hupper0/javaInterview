@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author lhp
- *
  */
 @SpringBootApplication
 public class Application {

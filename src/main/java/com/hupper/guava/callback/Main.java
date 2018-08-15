@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
  * Function:
  *
  * @author lhp
- *         Date: 2018/7/15 14:18
+ * Date: 2018/7/15 14:18
  * @since JDK 1.8
  */
 public class Main {
@@ -15,15 +15,15 @@ public class Main {
     private final static Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
     public static void main(String[] args) {
-        Notifier notifier = new Notifier() ;
+        Notifier notifier = new Notifier();
 
-        Caller caller = new Caller() ;
-        caller.setNotifier(notifier) ;
+        Caller caller = new Caller();
+        caller.setNotifier(notifier);
         caller.setQuestion("你在哪儿！");
         caller.setCallBackListener(new CallBackListener() {
             @Override
             public void callBackNotify(String msg) {
-                LOGGER.info("回复=【{}】" ,msg);
+                LOGGER.info("回复=【{}】", msg);
             }
         });
 

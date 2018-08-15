@@ -7,18 +7,19 @@ import org.slf4j.LoggerFactory;
  * Function:
  *
  * @author lhp
- *         Date: 20/03/2018 18:23
+ * Date: 20/03/2018 18:23
  * @since JDK 1.8
  */
-public class SpringLifeCycle{
+public class SpringLifeCycle {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(SpringLifeCycle.class);
-    public void start(){
+
+    public void start() {
         LOGGER.info("SpringLifeCycle start");
     }
 
 
-    public void destroy(){
+    public void destroy() {
         LOGGER.info("SpringLifeCycle destroy");
     }
 }

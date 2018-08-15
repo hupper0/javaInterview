@@ -9,10 +9,10 @@ import java.util.Map;
  * Function:
  *
  * @author lhp
- *         Date: 05/04/2018 12:04
+ * Date: 05/04/2018 12:04
  * @since JDK 1.8
  */
-public class LRULinkedMap<K,V> {
+public class LRULinkedMap<K, V> {
 
 
     /**
@@ -20,30 +20,30 @@ public class LRULinkedMap<K,V> {
      */
     private int cacheSize;
 
-    private LinkedHashMap<K,V> cacheMap ;
+    private LinkedHashMap<K, V> cacheMap;
 
 
     public LRULinkedMap(int cacheSize) {
         this.cacheSize = cacheSize;
 
-        cacheMap = new LinkedHashMap(16,0.75F,true){
+        cacheMap = new LinkedHashMap(16, 0.75F, true) {
             @Override
             protected boolean removeEldestEntry(Map.Entry eldest) {
-                if (cacheSize + 1 == cacheMap.size()){
-                    return true ;
-                }else {
-                    return false ;
+                if (cacheSize + 1 == cacheMap.size()) {
+                    return true;
+                } else {
+                    return false;
                 }
             }
         };
     }
 
-    public void put(K key,V value){
-        cacheMap.put(key,value) ;
+    public void put(K key, V value) {
+        cacheMap.put(key, value);
     }
 
-    public V get(K key){
-        return cacheMap.get(key) ;
+    public V get(K key) {
+        return cacheMap.get(key);
     }
 
 

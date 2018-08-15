@@ -29,9 +29,9 @@ public class LinkNode {
 
     Node tail;
     Node head;
-    int pos=-1;
+    int pos = -1;
 
-    public LinkNode(){
+    public LinkNode() {
 
     }
 
@@ -56,28 +56,28 @@ public class LinkNode {
 
     public Node getNode(int pos) {
         Node t = head;
-        while(true){
-            if(pos>0){
-                pos --;
+        while (true) {
+            if (pos > 0) {
+                pos--;
                 t = t.next;
-            }else{
+            } else {
                 return t;
             }
         }
     }
 
-    public void delNode(int pos){
-        if(pos<0){
+    public void delNode(int pos) {
+        if (pos < 0) {
             return;
         }
         Node t = head;
         Node pre = null;
-        while(t!=null){
-            if(pos>0){
-                pos --;
+        while (t != null) {
+            if (pos > 0) {
+                pos--;
                 pre = t;
                 t = t.next;
-            }else{
+            } else {
                 pre.next = t.next;
                 return;
             }
@@ -86,12 +86,12 @@ public class LinkNode {
 
     public void deleteDuplecate(Node head) {
         Node cur = head;
-        while (cur!=null){
+        while (cur != null) {
             //再次遍历链表，如果元素相同 则进行删除节点
             Node start = head;
             Node pre = null;
-            while (start!=null){
-                if(start!=cur && start.data==cur.data){
+            while (start != null) {
+                if (start != cur && start.data == cur.data) {
                     //删除
                     pre.next = start.next;
                 }
@@ -105,20 +105,21 @@ public class LinkNode {
 
     /**
      * 排序好的链表 如果去除重复元素
+     *
      * @param head
      */
     public void deleteDuplecate2(Node head) {
         Node cur = head;
-        while (cur!=null){
-           Node next = cur.next;
-           while (true){
-               if(cur.data == next.data){
+        while (cur != null) {
+            Node next = cur.next;
+            while (true) {
+                if (cur.data == next.data) {
                     cur.next = next.next;
                     next = next.next;
-               }else{
-                   break;
-               }
-           }
+                } else {
+                    break;
+                }
+            }
             cur = cur.next;
         }
     }
@@ -126,11 +127,11 @@ public class LinkNode {
 
     public void deleteDuplecate3(Node head) {
         Node cur = head;
-        while (cur!=null){
+        while (cur != null) {
             Node point = cur.next;
             Node pointPre = cur;
-            while (point!=null) {
-                if(cur.data == point.data){
+            while (point != null) {
+                if (cur.data == point.data) {
                     pointPre.next = point.next;
                 }
                 pointPre = point;
@@ -145,29 +146,30 @@ public class LinkNode {
 
     /**
      * 在某一个位置的前面插入
+     *
      * @param pos
      * @param node
      */
     public void insertNode(int pos, Node node) {
-        if(node == null || pos<0){
-            return ;
+        if (node == null || pos < 0) {
+            return;
         }
-        if (pos==0){
-            if(head == null){
+        if (pos == 0) {
+            if (head == null) {
                 head = tail = node.pre = node.next = node;
                 return;
             }
             Node t = head;
             node.next = t;
             head = t.pre = node;
-        }else {
+        } else {
             Node t_next = head;
             Node t_pre;
-            while(true){
-                if(pos>0){
-                    pos --;
+            while (true) {
+                if (pos > 0) {
+                    pos--;
                     t_next = t_next.next;
-                }else{
+                } else {
                     t_pre = t_next.pre;
                     t_next.pre = node;
                     node.next = t_next;
@@ -180,19 +182,18 @@ public class LinkNode {
     }
 
 
-
-    public static Node MergeSortedLists(Node head1,Node head2) {
-        if(head1==null){
+    public static Node MergeSortedLists(Node head1, Node head2) {
+        if (head1 == null) {
             return head2;
-        }else if(head2==null){
+        } else if (head2 == null) {
             return head1;
         }
         Node mergedHead = null;
 
-        if(head1.data<head2.data){
+        if (head1.data < head2.data) {
             mergedHead = head1;
             mergedHead.next = MergeSortedLists(head1.next, head2);
-        }else{
+        } else {
             mergedHead = head2;
             mergedHead.next = MergeSortedLists(head1, head2.next);
         }
@@ -205,9 +206,9 @@ public class LinkNode {
         Node pre = head;
         Node cn;
         pre.next = null;
-        while(current!=null){
+        while (current != null) {
             cn = current.next;
-            current.next = pre ;
+            current.next = pre;
 
             pre = current;
             current = cn;
@@ -215,12 +216,13 @@ public class LinkNode {
         return pre;
     }
 
-        /**
-         * 链表翻转  (假设链表是单向)
-         * @param head
-         * @return
-         */
-    public Node reverseIteratively(Node head){
+    /**
+     * 链表翻转  (假设链表是单向)
+     *
+     * @param head
+     * @return
+     */
+    public Node reverseIteratively(Node head) {
 //        Node current = head;
 //        Node pre = null;
 //        Node h_head = null;
@@ -235,17 +237,16 @@ public class LinkNode {
 //        }
 
 
-
         Node current = head;
         Node pre = null;
         Node next;
-        Node newHead =null;
-        while(current!=null){
+        Node newHead = null;
+        while (current != null) {
             next = current.next;
             current.next = pre;
 //            业务逻辑
 
-            if(next == null){
+            if (next == null) {
                 newHead = current;
             }
             pre = current;
@@ -256,8 +257,9 @@ public class LinkNode {
 
 
     /**
-     *  查找倒数 第k个元素
-     *  俩个指针，
+     * 查找倒数 第k个元素
+     * 俩个指针，
+     *
      * @param head
      * @param k
      * @return
@@ -266,27 +268,29 @@ public class LinkNode {
         Node t1 = head;
         Node t2 = head;
         int t = k;
-        while(t > 0 && t1!=null){
-            t --;
+        while (t > 0 && t1 != null) {
+            t--;
             t1 = t1.next;
         }
-        while (t1!=null){
+        while (t1 != null) {
             t1 = t1.next;
             t2 = t2.next;
         }
         return t2;
     }
+
     /**
      * 在链表末尾增加节点
+     *
      * @param node
      */
-    public void addTailNode(Node node){
-        if(node == null){
-            return ;
+    public void addTailNode(Node node) {
+        if (node == null) {
+            return;
         }
-        if(head == null){
+        if (head == null) {
             head = tail = node.pre = node.next = node;
-        }else{
+        } else {
             tail.next = node;
             node.pre = tail;
             tail = node;
@@ -294,13 +298,13 @@ public class LinkNode {
     }
 
 
-    public Node clone(Node head){
+    public Node clone(Node head) {
         Node newHead = null;
-        if(head!=null){
+        if (head != null) {
             newHead = new Node(head.data);
             Node sourcePointer = head.next;
             Node destPointer = newHead;
-            while(sourcePointer!=null){
+            while (sourcePointer != null) {
                 Node cloneNode = new Node(sourcePointer.data);
                 destPointer.next = cloneNode;
                 destPointer = cloneNode;
@@ -311,24 +315,25 @@ public class LinkNode {
         return newHead;
     }
 
-    public boolean hasCircle(Node head){
+    public boolean hasCircle(Node head) {
         Node h1 = head;
         Node h2 = head;
-        while(true){
+        while (true) {
             h1 = h1.next;
             h2 = h2.next.next;
-            if(h1 == h2 && h1!=null){
+            if (h1 == h2 && h1 != null) {
                 return true;
             }
-            if(h1==null || h2 ==null){
+            if (h1 == null || h2 == null) {
                 return false;
             }
         }
     }
 
     /**
-     *  查找倒数 第k个元素
-     *  俩个指针，
+     * 查找倒数 第k个元素
+     * 俩个指针，
+     *
      * @param head
      * @param k
      * @return
@@ -337,18 +342,18 @@ public class LinkNode {
         int i = k;
         Node n1 = head;
         Node n2 = head;
-        while (i>0 && n1!=null){
-            i --;
+        while (i > 0 && n1 != null) {
+            i--;
             n1 = n1.next;
         }
-        if(n1==null){
+        if (n1 == null) {
             return null;
         }
-        while (k<0){
+        while (k < 0) {
             k--;
             n1 = n1.next;
             n2 = n2.next;
-            if(n1==null){
+            if (n1 == null) {
                 return null;
             }
         }
@@ -356,21 +361,20 @@ public class LinkNode {
     }
 
 
-
-
 }
 
 
-class Node{
-    Node(int data){
+class Node {
+    Node(int data) {
         this.data = data;
     }
+
     int data;
     Node pre;
     Node next;
 
     @Override
     public String toString() {
-        return data+"";
+        return data + "";
     }
 }

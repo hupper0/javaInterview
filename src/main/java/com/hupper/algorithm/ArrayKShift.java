@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 /**
  * 数组右移K次, 原数组<code> [1, 2, 3, 4, 5, 6, 7]</code> 右移3次后结果为 <code>[5,6,7,1,2,3,4]</code>
- *
+ * <p>
  * 伪代码：
- *      if k< arr.length
- *           i in (0~(arr.length-k-1)) element -> i + k
- *           i in (arr.length-k ~ arr.length-1) element -> arr.length - (i + k)
- *
- *
+ * if k< arr.length
+ * i in (0~(arr.length-k-1)) element -> i + k
+ * i in (arr.length-k ~ arr.length-1) element -> arr.length - (i + k)
+ * <p>
+ * <p>
  * 基本思路：不开辟新的数组空间的情况下考虑在原属组上进行操作
  * 1 将数组倒置，这样后k个元素就跑到了数组的前面，然后反转一下即可
  * 2 同理后 len-k个元素只需要翻转就完成数组的k次移动
@@ -28,7 +28,7 @@ public class ArrayKShift {
          */
 
         if (array == null || 0 == array.length) {
-            return ;
+            return;
         }
 
         k = k % array.length;
@@ -61,7 +61,7 @@ public class ArrayKShift {
          * last length - k element reverse
          */
 
-        for (int i = k; i < k + (array.length - k ) / 2; i ++) {
+        for (int i = k; i < k + (array.length - k) / 2; i++) {
             int tmp = array[i];
             array[i] = array[array.length - 1 - i + k];
             array[array.length - 1 - i + k] = tmp;
@@ -69,7 +69,7 @@ public class ArrayKShift {
     }
 
     public static void main(String[] args) {
-        int[] array = {1, 2, 3 ,4, 5, 6, 7};
+        int[] array = {1, 2, 3, 4, 5, 6, 7};
         ArrayKShift shift = new ArrayKShift();
         shift.arrayKShift(array, 6);
 

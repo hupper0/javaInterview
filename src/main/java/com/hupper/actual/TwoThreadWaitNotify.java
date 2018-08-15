@@ -5,7 +5,7 @@ package com.hupper.actual;
  * 等待通知机制版
  *
  * @author lhp
- *         Date: 07/03/2018 13:19
+ * Date: 07/03/2018 13:19
  * @since JDK 1.8
  */
 public class TwoThreadWaitNotify {
@@ -51,7 +51,7 @@ public class TwoThreadWaitNotify {
                         number.flag = false;
                         TwoThreadWaitNotify.class.notify();
 
-                    }else {
+                    } else {
                         try {
                             TwoThreadWaitNotify.class.wait();
                         } catch (InterruptedException e) {
@@ -87,7 +87,7 @@ public class TwoThreadWaitNotify {
                         number.flag = true;
 
                         TwoThreadWaitNotify.class.notify();
-                    }else {
+                    } else {
                         try {
                             TwoThreadWaitNotify.class.wait();
                         } catch (InterruptedException e) {

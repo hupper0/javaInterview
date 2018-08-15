@@ -4,7 +4,7 @@ package com.hupper.concurrent;
  * Function:单例模式-双重检查锁
  *
  * @author lhp
- *         Date: 09/03/2018 01:14
+ * Date: 09/03/2018 01:14
  * @since JDK 1.8
  */
 public class Singleton {

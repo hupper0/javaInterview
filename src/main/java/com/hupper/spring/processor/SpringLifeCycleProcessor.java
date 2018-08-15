@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * Function:
  *
  * @author lhp
- *         Date: 20/03/2018 22:11
+ * Date: 20/03/2018 22:11
  * @since JDK 1.8
  */
 @Component
@@ -19,6 +19,7 @@ public class SpringLifeCycleProcessor implements BeanPostProcessor {
 
     /**
      * 预初始化 初始化之前调用
+     *
      * @param bean
      * @param beanName
      * @return
@@ -26,14 +27,15 @@ public class SpringLifeCycleProcessor implements BeanPostProcessor {
      */
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        if ("annotationBean".equals(beanName)){
-            LOGGER.info("SpringLifeCycleProcessor start beanName={}",beanName);
+        if ("annotationBean".equals(beanName)) {
+            LOGGER.info("SpringLifeCycleProcessor start beanName={}", beanName);
         }
         return bean;
     }
 
     /**
      * 后初始化  bean 初始化完成调用
+     *
      * @param bean
      * @param beanName
      * @return
@@ -41,8 +43,8 @@ public class SpringLifeCycleProcessor implements BeanPostProcessor {
      */
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        if ("annotationBean".equals(beanName)){
-            LOGGER.info("SpringLifeCycleProcessor end beanName={}",beanName);
+        if ("annotationBean".equals(beanName)) {
+            LOGGER.info("SpringLifeCycleProcessor end beanName={}", beanName);
         }
         return bean;
     }

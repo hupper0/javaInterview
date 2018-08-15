@@ -8,7 +8,7 @@ import java.util.Map;
  * Function:
  *
  * @author lhp
- *         Date: 05/05/2018 12:42
+ * Date: 05/05/2018 12:42
  * @since JDK 1.8
  */
 public class HashMapTest {
@@ -27,7 +27,7 @@ public class HashMapTest {
         System.out.println("=============");
 
         Iterator<String> iterator = map.keySet().iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             String key = iterator.next();
             System.out.println("key=" + key + " value=" + map.get(key));
 

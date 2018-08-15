@@ -4,7 +4,7 @@ package com.hupper.design.pattern.factorymethod;
  * Function:
  *
  * @author lhp
- *         Date: 19/03/2018 14:33
+ * Date: 19/03/2018 14:33
  * @since JDK 1.8
  */
 public class Cat extends Animal {

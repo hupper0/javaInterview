@@ -11,7 +11,7 @@ import javax.annotation.PreDestroy;
  * Function:用注解的方法
  *
  * @author lhp
- *         Date: 20/03/2018 18:46
+ * Date: 20/03/2018 18:46
  * @since JDK 1.8
  */
 @Component
@@ -19,12 +19,12 @@ public class AnnotationBean {
     private final static Logger LOGGER = LoggerFactory.getLogger(AnnotationBean.class);
 
     @PostConstruct
-    public void start(){
+    public void start() {
         LOGGER.info("AnnotationBean start");
     }
 
     @PreDestroy
-    public void destroy(){
+    public void destroy() {
         LOGGER.info("AnnotationBean destroy");
     }
 }

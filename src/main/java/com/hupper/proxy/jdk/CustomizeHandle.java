@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
  * Function:
  *
  * @author lhp
- *         Date: 23/12/2017 22:27
+ * Date: 23/12/2017 22:27
  * @since JDK 1.8
  */
 public class CustomizeHandle implements InvocationHandler {
@@ -24,7 +24,7 @@ public class CustomizeHandle implements InvocationHandler {
         } catch (InstantiationException e) {
             LOGGER.error("InstantiationException", e);
         } catch (IllegalAccessException e) {
-            LOGGER.error("IllegalAccessException",e);
+            LOGGER.error("IllegalAccessException", e);
         }
     }
 
