@@ -95,3 +95,45 @@ CMS清除内部状态，为下次回收做准备
 
 
 
+### 详细介绍
+* 1，首先jvm根据-XX:CMSInitiatingOccupancyFraction，-XX:+UseCMSInitiatingOccupancyOnly来决定什么时间开始垃圾收集；
+* 2，如果设置了-XX:+UseCMSInitiatingOccupancyOnly，那么只有当old代占用确实达到了-XX:CMSInitiatingOccupancyFraction参数所设定的比例时才会触发cms gc；
+* 3，如果没有设置-XX:+UseCMSInitiatingOccupancyOnly，那么系统会根据统计数据自行决定什么时候触发cms gc；因此有时会遇到设置了80%比例才cms gc，但是50%时就已经触发了，就是因为这个参数没有设置的原因；
+* 4，当cms gc开始时，首先的阶段是CMS-initial-mark，此阶段是初始标记阶段，是stop the world阶段，因此此阶段标记的对象只是从root集最直接可达的对象；
+     CMS-initial-mark：961330K（1572864K），指标记时，old代的已用空间和总空间
+* 5，下一个阶段是CMS-concurrent-mark，此阶段是和应用线程并发执行的，所谓并发收集器指的就是这个，主要作用是标记可达的对象
+       此阶段会打印2条日志：CMS-concurrent-mark-start，CMS-concurrent-mark
+* 6，下一个阶段是CMS-concurrent-preclean，此阶段主要是进行一些预清理，因为标记和应用线程是并发执行的，因此会有些对象的状态在标记后会改变，此阶段正是解决这个问题因为之后的Rescan阶段也会stop the world，为了使暂停的时间尽可能的小，也需要preclean阶段先做一部分工作以节省时间
+     此阶段会打印2条日志：CMS-concurrent-preclean-start，CMS-concurrent-preclean
+* 7，下一阶段是CMS-concurrent-abortable-preclean阶段，加入此阶段的目的是使cms gc更加可控一些，作用也是执行一些预清理，以减少Rescan阶段造成应用暂停的时间
+     此阶段涉及几个参数：
+     -XX:CMSMaxAbortablePrecleanTime：当abortable-preclean阶段执行达到这个时间时才会结束
+     -XX:CMSScheduleRemarkEdenSizeThreshold（默认2m）：控制abortable-preclean阶段什么时候开始执行，
+      即当eden使用达到此值时，才会开始abortable-preclean阶段
+     -XX:CMSScheduleRemarkEdenPenetratio（默认50%）：控制abortable-preclean阶段什么时候结束执行
+      此阶段会打印一些日志如下：
+     CMS-concurrent-abortable-preclean-start，CMS-concurrent-abortable-preclean，
+      CMS：abort preclean due to time XXX
+* 8，再下一个阶段是第二个stop the world阶段了，即Rescan阶段，此阶段暂停应用线程，对对象进行重新扫描并标记；
+       YG occupancy：964861K（2403008K），指执行时young代的情况
+       CMS remark：961330K（1572864K），指执行时old代的情况
+      此外，还打印出了弱引用处理、类卸载等过程的耗时
+* 9，再下一个阶段是CMS-concurrent-sweep，进行并发的垃圾清理
+* 10，最后是CMS-concurrent-reset，为下一次cms gc重置相关数据结构
+* 11，full gc：
+有2种情况会触发full gc，在full gc时，整个应用会暂停
+       A，concurrent-mode-failure：当cms gc正进行时，此时有新的对象要进行old代，但是old代空间不足造成的
+       B，promotion-failed：当进行young gc时，有部分young代对象仍然可用，但是S1或S2放不下，因此需要放到old代，但此时old代空间无法容纳此。
+
+影响cms gc时长及触发的参数是以下2个：
+        -XX:CMSMaxAbortablePrecleanTime=5000
+        -XX:CMSInitiatingOccupancyFraction=80
+解决也是针对这两个参数来的，根本的原因是每次请求消耗的内存量过大
+解决方式：
+      A，针对cms gc的触发阶段，调整-XX:CMSInitiatingOccupancyFraction=50，提早触发cms gc，就可以缓解当old代达到80%，cms gc处理不完，从而造成concurrent mode failure引发full gc
+     B，修改-XX:CMSMaxAbortablePrecleanTime=500，缩小CMS-concurrent-abortable-preclean阶段的时间
+     C，考虑到cms gc时不会进行compact，因此加入-XX:+UseCMSCompactAtFullCollection
+       （cms gc后会进行内存的compact）和-XX:CMSFullGCsBeforeCompaction=4（在full gc4次后会进行compact）参数
+
+
+

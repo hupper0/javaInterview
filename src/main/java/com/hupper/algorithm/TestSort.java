@@ -1,5 +1,8 @@
 package com.hupper.algorithm;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author lhp@meitu.com
  * @date 2018/7/11 下午7:07
@@ -8,8 +11,10 @@ public class TestSort {
 
     public static void main(String args[]) throws Exception {
 //        int arrar[] = {1, 2, 3, 66, 44, 22, 123, 12};
-//        int copy[] = {1, 2, 3, 66, 44, 22, 123, 12};
-//
+        long s = System.currentTimeMillis();
+        int copy[] = {4,3,2,7,8,2,3,1};
+        findDuplicates(copy);
+        System.out.println((System.currentTimeMillis()-s)/1000);
 ////        quick(arrar, 0 , arrar.length-1);
 ////        selectSort(arrar);
 ////        insertSort(arrar);
@@ -64,6 +69,41 @@ public class TestSort {
     }
 
 
+    /**
+     * 给定一个整数数组 a，其中1 ≤ a[i] ≤ n （n为数组长度）, 其中有些元素出现两次而其他元素出现一次。
+     *
+     * 找到所有出现两次的元素。
+     *
+     * 你可以不用到任何额外空间并在O(n)时间复杂度内解决这个问题吗？
+     *
+     * 示例：
+     *
+     * 输入:
+     * [4,3,2,7,8,2,3,1]
+     *
+     * 输出:
+     * [2,3]
+     * @param nums
+     * @return
+     */
+    public static List<Integer> findDuplicates(int[] nums) {
+        int cur = 0;
+        List<Integer> l = new ArrayList<>();
+        while(cur<=nums.length-1){
+            if(nums[cur] != nums[nums[cur]-1] ){
+                wq(nums, cur, nums[cur]-1);
+
+            }else{
+                if(cur!=nums[cur]-1 && !l.contains(nums[cur])){
+                    l.add(nums[cur]);
+                }
+                cur++;
+            }
+
+        }
+
+        return l;
+    }
     private static void selectSort(int[] array) {
         for (int i = 0; i < array.length; i++) {
             int minIndex = i;
@@ -125,6 +165,7 @@ public class TestSort {
     /**
      * 归并排序
      *
+     * 0 1    2 3
      * @param array
      * @param copy
      * @param begin
@@ -135,6 +176,7 @@ public class TestSort {
             return;
         }
         int mid = (end + begin) / 2;
+
 
         mergerSort(copy, array, begin, mid);
         mergerSort(copy, array, mid + 1, end);

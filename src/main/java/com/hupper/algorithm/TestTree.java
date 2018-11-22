@@ -36,8 +36,7 @@ public class TestTree {
     }
 
 
-    public int deep(BiTree root) {
-
+    private int deep(BiTree root) {
         if (root != null) {
             int leftDeep = deep(root.left) + 1;
             int rightDeep = deep(root.right) + 1;
@@ -48,8 +47,11 @@ public class TestTree {
     }
 
 
-    //递归实现前(先)序遍历  DLR
-    protected static void preorder(BiTree biTree) {
+    /**
+     * 先序遍历DLR
+     * @param biTree
+     */
+    private static void preorder(BiTree biTree) {
         if (biTree != null) {
             System.out.println(biTree.data);
             preorder(biTree.left);
@@ -57,8 +59,11 @@ public class TestTree {
         }
     }
 
-    //zhonng须 LDR
-    protected static void minorder(BiTree biTree) {
+    /**
+     * 中序遍历 LDR
+     * @param biTree
+     */
+    private static void minorder(BiTree biTree) {
         if (biTree != null) {
             minorder(biTree.left);
             System.out.print(biTree.data + ",");
@@ -66,8 +71,11 @@ public class TestTree {
         }
     }
 
-    //后续 左右中LRD
-    protected static void lastrder(BiTree biTree) {
+    /**
+     * 后续 左右中LRD
+     * @param biTree
+     */
+    private static void lastrder(BiTree biTree) {
         if (biTree != null) {
             lastrder(biTree.left);
             lastrder(biTree.right);
@@ -76,6 +84,10 @@ public class TestTree {
         }
     }
 
+    /**
+     * 中左右
+     * @param biTree
+     */
     public static void preOrderByStack(BiTree biTree) {
         Stack<BiTree> stack = new Stack<>();
         BiTree node = biTree;
@@ -131,9 +143,7 @@ public class TestTree {
                 BiTree biTree1 = stack.pop();
                 if (biTree1 != null) {
                     System.out.print(biTree1.data + ",");
-//                    node = biTree;
                     if (biTree1.right != null) {
-//                    stack.push(biTree1.right);
                         node = biTree1.right;
                         break;
                     }
@@ -145,7 +155,10 @@ public class TestTree {
         }
     }
 
-
+    /**
+     * 左右中
+     * @param biTree
+     */
     public static void lastOrderByStack(BiTree biTree) {
         Stack<BiTree> stack = new Stack<>();
         BiTree node = biTree;
@@ -162,8 +175,6 @@ public class TestTree {
                 BiTree biTree1 = stack.peek();
                 if (biTree1 != null) {
                     if (biTree1.right != null && biTree1.right != node2) {
-//                    stack.push(biTree1.right);
-
                         node = biTree1.right;
                         break;
                     } else {
@@ -268,7 +279,7 @@ public class TestTree {
      * @param root
      * @return
      */
-    public static void convert(BiTree root) {
+    private static void convert(BiTree root) {
         BiTree current = root;
         Stack<BiTree> stack = new Stack<>();
         BiTree pre = null;
@@ -297,17 +308,9 @@ public class TestTree {
         }
     }
 
-    //中序遍历
-    private static void minorder2(BiTree biTree) {
-        if (biTree != null) {
-            minorder2(biTree.left);
-            System.out.print(biTree.data + ",");
-            minorder2(biTree.right);
-        }
-    }
-
-
     /**
+     *
+     * 分而治之的思想是一切问题的解决思路，
      * int[] A = {4,5,6,7,8,0,1,2,3};
      * int[] A1 = {1,1,0,0,1,1,1};
      * 题目大致为：

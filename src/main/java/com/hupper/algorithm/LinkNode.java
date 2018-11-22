@@ -1,5 +1,7 @@
 package com.hupper.algorithm;
 
+import lombok.ToString;
+
 /**
  * @author lhp@meitu.com
  * @date 2018/6/24 下午6:00
@@ -23,7 +25,15 @@ public class LinkNode {
 //        list.insertNode(1,new Node(11));
 //        list.printList(list.head);
 //        list.reverseIteratively2(list.head);
-        list.printList(list.reverseIteratively2(list.head));
+//        list.printList(list.reverseIteratively2(list.head));
+
+        ListNode l1 = new ListNode(5);
+        l1.next = new ListNode(50);
+        l1.next.next = new ListNode(4);
+        l1.next.next.next = new ListNode(7);
+        l1.next.next.next.next = new ListNode(3);
+
+        printList(sortList2(l1));
     }
 
 
@@ -39,6 +49,14 @@ public class LinkNode {
     public void printList(Node head) {
         while (head != null) {
             System.out.print(head.data + ",");
+            head = head.next;
+        }
+        System.out.println();
+    }
+
+    public static void printList(ListNode head) {
+        while (head != null) {
+            System.out.print(head.val + ",");
             head = head.next;
         }
         System.out.println();
@@ -180,6 +198,89 @@ public class LinkNode {
             }
         }
     }
+    //1 50 4 7
+    public static ListNode sortList2(ListNode head) {
+        ListNode current = head;
+        ListNode pre = new ListNode(0);
+        ListNode newHead = pre;
+        while(current!=null){
+            ListNode nextC = current.next;
+            ListNode change = null;
+            ListNode changePre = current;
+            ListNode tmpPre = changePre;
+            while(nextC!=null){
+                if(change==null && nextC.val<current.val){
+                    tmpPre = changePre;
+                    change = nextC;
+                }else if(change!=null && nextC.val<change.val){
+                    change = nextC;
+                    tmpPre = changePre;
+                }
+                changePre = nextC;
+                nextC = nextC.next;
+            }
+            if(change!=null){
+                tmpPre.next = change.next;
+                pre.next = change;
+                change.next = current;
+                pre = change;
+            }
+            else{
+                if(newHead.next==null){
+                    newHead.next = current;
+                }
+                pre = current;
+                current = current.next;
+            }
+        }
+        return newHead;
+    }
+
+
+    public static ListNode paration(ListNode begin, ListNode end){
+        if(begin == null || begin == end){
+            return begin;
+        }
+
+
+        int val = begin.val;
+        ListNode index = begin,
+                 cur = begin.next;
+
+        while(cur != end){
+            if(cur.val < val){
+                index = index.next;
+                int tmp = cur.val;
+                cur.val = index.val;
+                index.val = tmp;
+            }
+            cur = cur.next;
+        }
+
+
+        begin.val = index.val;
+        index.val = val;
+
+        return index;
+    }
+
+
+
+    private static ListNode[] getMin(ListNode head){
+        int v = -999999;
+        ListNode pre = null;
+        ListNode node = head;
+        while(head!=null){
+            if(head.val<v){
+                pre = node;
+                node = head;
+            }
+            head = head.next;
+        }
+        ListNode[] ret =  {pre, node};
+        return ret;
+    }
+
 
 
     public static Node MergeSortedLists(Node head1, Node head2) {
@@ -361,8 +462,97 @@ public class LinkNode {
     }
 
 
+    /**
+     * 合并 k 个排序链表，返回合并后的排序链表。请分析和描述算法的复杂度。
+     * <p>
+     * 输入:
+     * [
+     * 1->4->5,
+     * 1->3->4,
+     * 2->6
+     * ]
+     * 输出: 1->1->2->3->4->4->5->6
+     *
+     * @param lists
+     * @return
+     */
+    public static ListNode mergeKLists(ListNode[] lists) {
+        ListNode tmp = null;
+        for (int i = 0; i < lists.length; i++) {
+            if (tmp == null) {
+                tmp = lists[i];
+            } else {
+                tmp = merge(tmp, lists[i]);
+            }
+        }
+
+        return tmp;
+    }
+
+
+    public static ListNode merge(ListNode n1, ListNode n2) {
+        if (n2 == null) {
+            return n1;
+        } else if (n1 == null) {
+            return n2;
+        }
+        ListNode cu_1 = n1;
+        ListNode cu_2 = n2;
+
+        ListNode head;
+
+        //init head;
+        if (cu_2.val > cu_1.val) {
+            head = cu_1;
+            cu_1 = cu_1.next;
+        } else {
+            head = cu_2;
+            cu_2 = cu_2.next;
+        }
+        ListNode p = head;
+        while (true) {
+            if (cu_2 == null && cu_1 != null) {
+                p.next = cu_1;
+                break;
+            } else if (cu_1 == null && cu_2 != null) {
+                p.next = cu_2;
+                break;
+            }
+            if (cu_1.val < cu_2.val) {
+                ListNode tmp = cu_1.next;
+                p.next = cu_1;
+                p = p.next;
+                cu_1 = tmp;
+
+            } else {
+                p.next = cu_2;
+                p = p.next;
+                cu_2 = cu_2.next;
+            }
+            if (cu_1 == null && cu_2 == null) {
+                break;
+            }
+
+
+        }
+        return head;
+
+    }
 }
 
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode(int x) {
+        val = x;
+    }
+
+    @Override
+    public String toString() {
+        return val + "";
+    }
+}
 
 class Node {
     Node(int data) {
