@@ -2,9 +2,9 @@
 * 在hadoop 1.x中和hadoop 2.x中，mapreduce的执行流程也不一样（完全不一样），在hadoop1.x中 mapreduce的 资源管理与分配和任务监控都是集中在 jobtracker 上，这样会造成jobtracker的负担非常大，而且在hadoop 1.x中没有jobtracker的HA机制，从而会让集群的健壮性很差
 
 
-####1、hadoop1.x mapreduce执行过程
+#### 1、hadoop1.x mapreduce执行过程
 
-######简述：client端提交job给jobtracker，jobtracker会给这个job分配资源，在tasktracker上启动task任务，而且还要监控task任务的状况，如果task挂了，jobtracker还得重新分配新的资源给挂了的task任务，当task执行完成后，jobtracker会为reduce任务分配资源，然后监控reduce的执行流程，最后执行完成输出
+###### 简述：client端提交job给jobtracker，jobtracker会给这个job分配资源，在tasktracker上启动task任务，而且还要监控task任务的状况，如果task挂了，jobtracker还得重新分配新的资源给挂了的task任务，当task执行完成后，jobtracker会为reduce任务分配资源，然后监控reduce的执行流程，最后执行完成输出
 
 * 1、客户端（Client）：编写mapreduce程序，配置作业，提交作业，启动Jobclient进程。
 * 2、Jobclient向JobTracker请求一个Job ID， 也就是作业ID。
