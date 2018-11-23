@@ -42,7 +42,7 @@
 
 	![avatar](http://dl.iteye.com/upload/attachment/0066/0128/8aab5880-d171-30f7-91d6-aaacba2d03ce.jpg)
 
-####2、Yarn简介
+#### 2、Yarn简介
 * Yarn采用Master/Slave结构，总体上采用了双层调度架构。
 	* 在第一层的调度是ResourceManager和NodeManager。ResourceManager是Master节点，相当于JobTracker，包含Scheduler和App Manager两个组件。这两个组件分管资源调度和应用管理；NodeManager是Slave节点，可以部署在独立的机器上，用于管理机器上的资源。NodeManager会向ResourceManager报告它的资源数量、使用情况并接受ResourceManager的资源调度。
 	* 第二层的调度指的是NodeManager和Container。NodeManager会将Cpu&内存等资源抽象成一个个的Container，并管理这些Container的生命周期。
