@@ -2,7 +2,7 @@
 #### 简述：
 * Google有三剑客，GFS，BigTable以及MapReduce。这三个在一起组成了Google最早期的三篇论文的基础架构,这篇主要讲述gfs.
 * 搜索引擎的支撑架构: 
- ![avatar](/Users/hupper/Desktop/img/gfs1.png)
+ ![avatar](./image/gfs1.png)
  
 #### gfs产生的背景
 * 1、 component failures are the norm rather than the exception
