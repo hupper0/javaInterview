@@ -67,7 +67,7 @@
 	* 而底层GFS提供了小小表格，Log的存储方式，并且提供了多种Replicas的方式，保证数据不会丢失，当然还有Cluster scheduling system来监控整个系统服务的过程。
 
 
-####总结
+#### 总结
 * Bigtable是用<key, value>的物理结构存储了超大表。在逻辑上行列都可以表达，甚至Column family都能表达，但在物理上就是简单的<key, value>的存储方式。
 吃内存的Bigtable和吃硬盘的GFS从此幸福地在一起了。
 * 参考文献：
