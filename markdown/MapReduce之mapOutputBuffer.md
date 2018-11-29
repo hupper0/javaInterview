@@ -1,4 +1,4 @@
-####MapReduce之mapOutputBuffer解析
+#### MapReduce之mapOutputBuffer解析
 * MapOutPutBuffer就是map任务暂存记录的内存缓冲区。不过这个缓冲区是有限的，当写入的数据超过缓冲区设定的阈值时，需要将缓冲区的数据写入到磁盘，这个过程叫spill。在溢出数据到磁盘的时候，会按照key进行排序，保证刷新到磁盘的记录时排好序的。该缓冲区的设计非常有意思，它做到了将数据的meta data(索引)和raw data(原始数据)一起存放到了该缓冲区中，并且，在spill的过程中，仍然能够往该缓冲区中写入数据，我们在下面会详细分析该缓冲区是怎么实现这些功能的。
 
 * 缓冲区分析: MapoutPutBuffer是一个环形缓冲区，每个输入的key->value键值对以及其索引信息都会写入到该缓冲区，当缓冲区块满的时候，有一个后台的守护线程会负责对数据排序，将其写入到磁盘。
@@ -19,7 +19,7 @@
 * 13、bufferremaining:buffer剩余空间，字节为单位
 * 14、softLimit:溢出阈值，超出后就溢出。Sortmb*spiller
 
-####初始状态 
+#### 初始状态 
 * 初始时，equator=0，在写入数据时，raw data往数组下标增大的方向延伸，而meta data（索引信息）往从数组后面往下标减小的方向延伸。从上图来看，raw data就是按照顺时针来写入数据，而meta data按照逆时针写入数据。我们再看一下各个变量的初始化情况，raw data部分的变量，bufstart、bufend、bufindex都初始化为0。Meta data部分的变量，kvstart 、kvend、kvindex都是按逆时针偏移了16个字节（metasize=16个字节），因为一个meta data占用16个字节（4个整数，分别存储keystart,valuestart,partion,valuelen），所以需要逆时针偏移16个字节来标记第一个存储的metadata的起始位置。还有一个重要的变量，bufferremaining = softlimit（默认是sortmb*80%）。
 ![avatar](https://img-blog.csdn.net/20170222091551461?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHczMDUwODA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
 
@@ -27,7 +27,7 @@
 * 我们看一下写入第一个<key,value>的情况，首先放入key，在bufferindex的基础上累加key的字节数，然后放入value，继续累加bufferindex的字节数。接下来放入metadata，meta data一共包括4个整数，第一个int放valuestart，第二个int放keystart，第三个int放partion，第四个int放value的长度。为什么只有value的长度，没有key的长度？个人理解key的长度可以有valuestart – keystart得出，不需要额外的空间来存储key的长度。需要注意的是，bufindex和kvindex发生了变化，分别指向了下一个数据需要插入的地方。但是bufstart，endstart,kvstart,kvend都没有变化，bufferremaining相应地减少了meta data 和raw data占据的空间
 ![avatar](https://img-blog.csdn.net/20170222091651962?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHczMDUwODA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
 
-####溢出文件
+#### 溢出文件
 
 *  第一次达到spill的阈值
 ![avatar](https://img-blog.csdn.net/20170222091806190?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHczMDUwODA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
